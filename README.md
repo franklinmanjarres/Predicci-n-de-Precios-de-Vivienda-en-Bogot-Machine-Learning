@@ -116,3 +116,4 @@ Python · pandas · NumPy · scikit-learn · Matplotlib · Seaborn
 Cali, Colombia
 
 [github.com/franklinmanjarres](https://github.com/franklinmanjarres)
+https://fw2z7ovawqtfw6gwnytndv.streamlit.app
