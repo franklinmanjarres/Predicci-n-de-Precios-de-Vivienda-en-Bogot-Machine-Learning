@@ -197,7 +197,7 @@ prediccion-precios-vivienda-bogota-ml/
 - Estandarización de variables.
 - Validación Cruzada (K-Fold).
 - Modelos de regresión robusta.
-- Evaluación mediante MAE, RMSE y R².
+- Evaluación mediante MAE, RMSE.
 - Análisis de residuos.
 - Interpretación de coeficientes.
 - Desarrollo y despliegue de aplicaciones con Streamlit.
