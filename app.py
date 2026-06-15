@@ -10,7 +10,7 @@ import os
 # Configuración de la página
 # ============================================================
 st.set_page_config(
-    page_title="Predicción de Precios — Bogotá",
+    page_title="Predicción de Precios de Vivienda en Bogotá | Machine Learning",
     page_icon="🏠",
     layout="wide"
 )
