@@ -12,12 +12,6 @@ Modelo de regresión para estimar el precio de apartamentos en Bogotá a partir 
 
 ---
 
-## Dashboard
-
-![Dashboard](images/dashboard.png)
-
----
-
 ## Descripción del problema
 
 El mercado inmobiliario en Colombia presenta una característica única a nivel mundial: el **estrato socioeconómico** (escala 1–6), que influye en el acceso a servicios públicos, infraestructura, seguridad y valorización del sector.
@@ -40,7 +34,7 @@ Este proyecto incorpora el estrato como variable predictora para analizar su imp
 | Variables finales | 16 |
 | Variable objetivo | Precio de venta (COP) |
 
-Variables principales:
+**Variables principales**
 
 - Área
 - Estrato
@@ -106,10 +100,6 @@ El modelo final reduce el error de predicción en **67.5%** respecto al baseline
 
 Con un precio mediano de **$218 millones COP**, el error promedio de **$34.2 millones COP** representa aproximadamente una precisión del **84%**.
 
-### Comparación del desempeño
-
-![Comparación de modelos](images/mae_modelos.png)
-
 ---
 
 ## Variables más influyentes
@@ -123,11 +113,7 @@ Con un precio mediano de **$218 millones COP**, el error promedio de **$34.2 mil
 | Antigüedad | -0.0230 | Reduce el precio esperado |
 | Barrio (Ciudad Usme) | -0.0533 | Zona con menor valorización relativa |
 
-El **área** y el **estrato socioeconómico** constituyen las variables con mayor capacidad predictiva dentro del modelo.
-
-### Coeficientes del modelo
-
-![Coeficientes HuberRegressor](images/huber_coeficientes.png)
+El **área** y el **estrato socioeconómico** constituyen las variables con mayor capacidad predictiva del modelo.
 
 ---
 
@@ -135,29 +121,19 @@ El **área** y el **estrato socioeconómico** constituyen las variables con mayo
 
 ### Transformación logarítmica del objetivo
 
-El precio presenta una distribución altamente asimétrica.
-
-Se aplicó la transformación **log1p()** durante el entrenamiento y posteriormente **expm1()** para recuperar la escala original de las predicciones.
-
----
+El precio presenta una distribución altamente asimétrica. Se aplicó la transformación `log1p()` durante el entrenamiento y posteriormente `expm1()` para recuperar la escala original de las predicciones.
 
 ### Selección de variables
 
-Se utilizó un **Árbol de Decisión** con profundidad máxima de 4 niveles para identificar las variables numéricas con mayor capacidad predictiva antes del modelado.
-
----
+Se utilizó un Árbol de Decisión con profundidad máxima de 4 niveles para identificar las variables numéricas con mayor capacidad predictiva antes del modelado.
 
 ### Modelo final
 
 Aunque la Regresión Lineal obtuvo un desempeño ligeramente superior en MAE, el **HuberRegressor** fue seleccionado como modelo final por su mayor robustez frente a valores atípicos, frecuentes en el mercado inmobiliario.
 
----
-
 ### Estandarización
 
-El uso de **StandardScaler** resultó indispensable para garantizar la convergencia del algoritmo HuberRegressor.
-
-Sin estandarización, el modelo presentó errores extremadamente altos debido a problemas numéricos durante la optimización.
+El uso de `StandardScaler` resultó indispensable para garantizar la convergencia del algoritmo HuberRegressor. Sin estandarización, el modelo presentó errores extremadamente altos debido a problemas numéricos durante la optimización.
 
 ---
 
@@ -179,10 +155,6 @@ Sin estandarización, el modelo presentó errores extremadamente altos debido a 
 prediccion-precios-vivienda-bogota-ml/
 │
 ├── data/
-├── images/
-│   ├── dashboard.png
-│   ├── mae_modelos.png
-│   └── huber_coeficientes.png
 ├── notebooks/
 ├── app.py
 ├── requirements.txt
@@ -209,23 +181,23 @@ streamlit run app.py
 
 - Incorporar más propiedades de estrato 5 y 6 para mejorar el desempeño del modelo en el segmento premium.
 - Incluir variables espaciales como distancia a estaciones de TransMilenio, parques e instituciones educativas.
-- Explorar modelos basados en árboles de gradiente (XGBoost y LightGBM).
-- Implementar explicabilidad mediante SHAP para analizar la contribución individual de cada variable.
+- Explorar modelos basados en árboles de gradiente como XGBoost y LightGBM.
+- Implementar técnicas de explicabilidad (SHAP) para analizar la contribución individual de cada variable.
 
 ---
 
 ## Habilidades demostradas
 
-- Limpieza y preprocesamiento de datos
-- Análisis Exploratorio de Datos (EDA)
-- Ingeniería de características
-- Selección de variables
-- Validación Cruzada (K-Fold)
-- Modelos de Regresión
-- Interpretación de coeficientes
-- Evaluación mediante MAE, RMSE 
-- Visualización de datos
-- Desarrollo y despliegue con Streamlit
+- Limpieza y preprocesamiento de datos.
+- Análisis Exploratorio de Datos (EDA).
+- Ingeniería de características.
+- Selección de variables.
+- Validación Cruzada (K-Fold).
+- Modelos de regresión.
+- Evaluación mediante MAE, RMSE y R².
+- Interpretación de resultados.
+- Visualización de datos.
+- Desarrollo y despliegue de aplicaciones con Streamlit.
 
 ---
 
@@ -235,6 +207,6 @@ streamlit run app.py
 
 Matemático | Data Science | Machine Learning
 
-- GitHub: https://github.com/franklinmanjarres
-- LinkedIn: https://www.linkedin.com/in/franklinmanjarres
-- Demo: https://fw2z7ovawqtfw6gwnytndv.streamlit.app
+- **GitHub:** https://github.com/franklinmanjarres
+- **LinkedIn:** https://www.linkedin.com/in/franklinmanjarres
+- **Demo (Streamlit):** https://fw2z7ovawqtfw6gwnytndv.streamlit.app
