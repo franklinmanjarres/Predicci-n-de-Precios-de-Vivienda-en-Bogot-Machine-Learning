@@ -11,7 +11,7 @@ import os
 # ============================================================
 st.set_page_config(
     page_title="Predicción de Precios de Vivienda en Bogotá | Machine Learning",
-    page_icon="🏠",
+    page_icon="📈",
     layout="wide"
 )
 
