@@ -97,11 +97,10 @@ Sin `StandardScaler`, HuberRegressor presenta divergencia numérica (MAE > $400 
 
 ## Limitaciones y trabajo futuro
 
-- Incorporar más propiedades de estrato 5–6 para mejorar el desempeño en el segmento premium.
-- Agregar variables espaciales: distancia a estaciones de TransMilenio, parques e instituciones educativas.
-- Evaluar modelos no lineales (XGBoost, LightGBM) para capturar relaciones más complejas.
-- Implementar el modelo como API con FastAPI y panel interactivo con Streamlit.
-
+- Incorporar más propiedades de estrato 5–6 para mejorar el desempeño 
+  en el segmento premium.
+- Agregar variables espaciales: distancia a estaciones de TransMilenio, 
+  parques e instituciones educativas.
 ---
 
 ## Stack tecnológico
