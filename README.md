@@ -110,10 +110,11 @@ Python · pandas · NumPy · scikit-learn · Matplotlib · Seaborn
 ---
 
 ## Autor
-st.divider()
-st.markdown(
-    "**Franklin Manuel Manjarres**  \n"
-    "Cali, Colombia  \n"
-    "[github.com/franklinmanjarres](https://github.com/franklinmanjarres/-Predicci-n-de-Precios-de-Vivienda-en-Bogot-Colombia)  \n"
-    "[fw2z7ovawqtfw6gwnytndv.streamlit.app](https://fw2z7ovawqtfw6gwnytndv.streamlit.app)"
-)
+
+**Franklin Manuel Manjarres**
+
+Matemático | Data Scientist Junior | Machine Learning
+
+- GitHub: https://github.com/franklinmanjarres/-Predicci-n-de-Precios-de-Vivienda-en-Bogot-Colombia
+- Demo (Streamlit): https://fw2z7ovawqtfw6gwnytndv.streamlit.app
+- LinkedIn: https://www.linkedin.com/in/...
